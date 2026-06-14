@@ -537,7 +537,7 @@ function initNewsletter() {
     note.textContent = '✓ You\'re subscribed!';
     note.style.color = 'var(--neon)';
     inp.value = '';
-    showToast('🎉 Subscribed! Welcome to the TAJIKPEAK community.');
+    showToast('🎉 Subscribed! Welcome to the Vaisiddin official site');
   });
 }
 
