@@ -187,16 +187,13 @@ function hideLoader() {
   initScrollReveal();
 }
 
-// Primary trigger: fire as soon as DOM + CSS are ready (works offline/local)
+
 document.addEventListener('DOMContentLoaded', () => setTimeout(hideLoader, 1400));
 
-// Backup trigger: window.load in case DOMContentLoaded somehow already fired
 window.addEventListener('load', () => setTimeout(hideLoader, 1400));
 
-// Hard safety: kill loader after 3s no matter what
 setTimeout(hideLoader, 3000);
 
-/* ── NAVIGATION & ROUTING ────────────────────────────────────── */
 function initNavigation() {
   const navbar   = $('#navbar');
   const hamburger = $('#hamburger');
@@ -540,7 +537,7 @@ function initNewsletter() {
     note.textContent = '✓ You\'re subscribed!';
     note.style.color = 'var(--neon)';
     inp.value = '';
-    showToast('🎉 Subscribed! Welcome to the IRONPEAK community.');
+    showToast('🎉 Subscribed! Welcome to the TAJIKPEAK community.');
   });
 }
 
